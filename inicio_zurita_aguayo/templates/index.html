@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación Sumativa 2 - Gamer</title>
+    <!-- Aquí cargamos los estilos visuales de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark text-white">
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Temática Gamer - Backend</h2>
+        
+        <!-- INICIO CARRUSEL -->
+        <div id="carruselGamer" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <!-- Foto 1 (Tema 1) con la doble extensión corregida -->
+            <div class="carousel-item active">
+              <img src="{% static 'images/tema1_foto1.jpg.jpg' %}" class="d-block w-100" alt="Videojuegos 1">
+            </div>
+            
+            <!-- Foto 2 (Tema 2) con la doble extensión corregida -->
+            <div class="carousel-item">
+              <img src="{% static 'images/tema2_foto1.jpg.jpg' %}" class="d-block w-100" alt="Hardware Gamer 1">
+            </div>
+
+            <!-- Foto 2 (Tema 1) -->
+            <div class="carousel-item">
+              <img src="{% static 'images/tema1_foto2.jpg.jpg' %}" class="d-block w-100" alt="Videojuegos 2">
+            </div>
+
+            <!-- Foto 2 (Tema 2) -->
+            <div class="carousel-item">
+              <img src="{% static 'images/tema2_foto2.jpg.jpg' %}" class="d-block w-100" alt="Hardware Gamer 2">
+            </div>
+
+          </div>
+          
+          <!-- Controles del carrusel -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carruselGamer" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carruselGamer" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+        <!-- FIN CARRUSEL -->
+        
+    </div>
+
+    <!-- Aquí cargamos las animaciones del carrusel de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
